@@ -13,7 +13,7 @@ function Footer() {
               This is your official dispatch
            </Col>
            <Col className="p-0 d-flex justify content-end" md={3}>
-              This site was made by Vessel Masters Inc.
+              Created by Vessel Masters Inc. Copyright &copy; Vesssel Masters. All rights reserved.
            </Col>
         </Row>
       </Container>
