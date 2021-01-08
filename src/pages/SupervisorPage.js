@@ -1,18 +1,19 @@
-// import { React, useState } from 'react';
-import { Dropdown, Menu } from 'semantic-ui-react';
-// import ReactDOM from 'react-dom';
-// import DropdownButton from 'react-bootstrap/DropdownButton';
+import { React } from 'react';
 import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+import { Dropdown } from 'react-bootstrap';
+// import { Dropdown } from 'semantic-ui-react';
+// import ReactDOM from 'react-dom';
+// import { createPopper } from '@popperjs/core';
+// import DropdownButton from 'react-bootstrap/DropdownButton';
 // import SplitButton from 'react-bootstrap/SplitButton';
 // import ToggleButton from 'react-bootstrap/ToggleButton';
 // import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
-import ButtonGroup from 'react-bootstrap/ButtonGroup';
-// import { createPopper } from '@popperjs/core';
 
-// function SupervisorPage(props) {
-  class SupervisorPage extends React.Component {
 
-    constructor(props)
+function SupervisorPage (props) {
+return(
+<>
   <Dropdown as={ButtonGroup}>
     <Dropdown.Toggle id="dropdown-custom-1">Pow! Zoom!</Dropdown.Toggle>
     <Dropdown.Menu className="super-colors">
@@ -38,5 +39,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
       <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
     </Dropdown.Menu>
   </Dropdown>
-
+</>
+)
+    }
 export default SupervisorPage;
