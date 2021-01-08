@@ -1,9 +1,10 @@
 {
-  "homepage": "https://aprzygocki.github.io/React_Portfolio",
-  "name": "portfolio-site",
+  "homepage": "/",
+  "name": "dispatch",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@popperjs/core": "^2.6.0",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
@@ -17,8 +18,8 @@
     "react-scripts": "4.0.1",
     "react-spring": "^8.0.27",
     "reactjs-dropdown-component": "^1.1.6",
-    "web-vitals": "^0.2.4",
-    "semantic-ui-react": "2.0.1"
+    "semantic-ui-react": "2.0.1",
+    "web-vitals": "^0.2.4"
   },
   "scripts": {
     "predeploy": "npm run build",
