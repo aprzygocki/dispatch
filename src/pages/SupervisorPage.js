@@ -45,7 +45,7 @@ return(
     </Dropdown.Menu>
   </Dropdown>
   <Dropdown as={ButtonGroup}>
-    <Dropdown.Toggle variant="primary" id="qualifications">Duration</Dropdown.Toggle>
+    <Dropdown.Toggle variant="primary" id="duration">Duration</Dropdown.Toggle>
       <Dropdown.Menu className="super-colors">
         <Dropdown.Item eventKey="1">8 Hours</Dropdown.Item>
         <Dropdown.Item eventKey="2">16 Hours</Dropdown.Item>
