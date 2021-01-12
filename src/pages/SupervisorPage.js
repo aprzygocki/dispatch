@@ -6,6 +6,9 @@ import { Dropdown } from 'react-bootstrap';
 // import ReactDOM from 'react-dom';
 // import { createPopper } from '@popperjs/core';
 import DropdownButton from 'react-bootstrap/DropdownButton';
+import DayPicker from 'react-day-picker';
+import 'react-day-picker/lib/style.css';
+// import Calendar from '../components/Calendar';
 // import SplitButton from 'react-bootstrap/SplitButton';
 // import ToggleButton from 'react-bootstrap/ToggleButton';
 // import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
@@ -74,6 +77,8 @@ return(
         <Dropdown.Item eventKey="Call Supervisor for Location Start">Call Supervisor for Location Start</Dropdown.Item>
     </Dropdown.Menu>
   </Dropdown>
+  {/* <Calendar/> */}
+  <DayPicker/>
   <h4>You selected {value}</h4>
 </>
 );

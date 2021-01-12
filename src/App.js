@@ -25,9 +25,7 @@ class App extends React.Component {
       ],
       home: {
         title: 'DISPATCH',
-        subtitle: 'Projects that create possibility',
-        text: '1 MDH 1300-2100 Larkspur C.O.I. ',
-        description: 'something',
+        text: '1 MDH 1300-2100 Larkspur C.O.I.',
       },
       about: {
         title: 'About Me',
