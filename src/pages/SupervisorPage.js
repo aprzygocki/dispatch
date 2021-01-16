@@ -77,7 +77,14 @@ return(
         <Dropdown.Item eventKey="Call Supervisor for Location Start">Call Supervisor for Location Start</Dropdown.Item>
     </Dropdown.Menu>
   </Dropdown>
-  <Calendar/>
+  <Dropdown as={ButtonGroup} onSelect={handleSelect}>
+    <Dropdown.Toggle variant="danger" id="date"
+    >Date</Dropdown.Toggle>
+    <Dropdown.Menu className="super-colors">
+      <Calendar/>
+    </Dropdown.Menu>
+  </Dropdown>
+ 
   
   <div>You selected {value}</div>
 </>
