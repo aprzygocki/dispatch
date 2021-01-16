@@ -78,8 +78,8 @@ return(
     </Dropdown.Menu>
   </Dropdown>
   <Dropdown as={ButtonGroup} onSelect={handleSelect}>
-    <Dropdown.Toggle variant="danger" id="date"
-    >Date</Dropdown.Toggle>
+    <Dropdown.Toggle variant="danger" id="start_date"
+    >Start Date</Dropdown.Toggle>
     <Dropdown.Menu className="super-colors">
       <Calendar/>
     </Dropdown.Menu>
