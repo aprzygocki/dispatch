@@ -25,7 +25,7 @@ class App extends React.Component {
       ],
       home: {
         title: 'DISPATCH',
-        text: '1 MDH 1300-2100 Larkspur C.O.I.',
+        text: '1 Deckhand Valid Drivers Licence 8hrs Larkspur Ferry Terminal 1/22/2021 Shift Hours 1300-2100',
       },
       about: {
         title: 'About Me',
