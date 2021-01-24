@@ -25,9 +25,12 @@ function SupervisorPage (props) {
 return(
 <>
   <div class="justify-content-left">
-    <Hero title={props.title} />
-    
-    <h3>Create a job using the dropdown menus below</h3>
+    {/* <Hero title={props.title} /> */}
+    <h1>Supervisor</h1>
+    {/* We can toggle between these two styles of 
+    Supervisor. Un-comment line 28 or 29 and comment in 
+    whichever is preffered */}
+    <h4>Create a job using the dropdown menus below</h4>
     <hr/>
     <Dropdown as={ButtonGroup} onSelect={handleSelect}>
       <Dropdown.Toggle variant="primary" id="quantity" >Quantity</Dropdown.Toggle>
