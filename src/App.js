@@ -6,28 +6,37 @@ import Nav from 'react-bootstrap/Nav';
 import './App.css';
 
 import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
+import HomePage from './containers/Login';
 import DispatchPage from './pages/DispatchPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import SupervisorPage from './pages/SupervisorPage';
+import Login from "./containers/Login";
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      title: 'User Names',
+      userName: 'Cindy',
       // title seems useless here. Navbar Brand renders User Name//
       headerLinks: [
-        { title: 'Home', path: '/' },        
+        { title: 'Home', path: '/' },
+        { title: 'Login', path: '/login' },
+        { title: 'Dispatch', path: '/dispatch' },  
         { title: 'About', path: '/about' },       
         { title: 'Contact', path: '/contact' },
         { title: 'Supervisor', path: '/supervisor' },
       ],
       home: {
-        signin: 'Sign in',
+        title: 'Home',
         subTitle:'Hi there! Nice to see you again',
+        text:'Email',
+        
+      },
+      login: {
+        title: 'login here homie',
+        subTitle:'dude, login',
         text:'Email',
         
       },
@@ -44,7 +53,7 @@ class App extends React.Component {
       },
       supervisor: {
         title: 'Supervisor',
-        subTitle: '',
+        subTitle: 'come on',
         text: 'something',
         // subTitle and text don't work //
       },
@@ -63,6 +72,7 @@ class App extends React.Component {
               <Nav className="ml-auto">
                 <Link className="nav-link" to="/">
                 Home</Link>
+                <Link className="nav-link" to="/login">Login</Link>
                 <Link className="nav-link" to="/dispatch">Dispatch</Link>
                 <Link className="nav-link" to="/about">About</Link>
                 <Link className="nav-link" to="/contact">Contact</Link>
@@ -70,9 +80,14 @@ class App extends React.Component {
              </Nav>
             </Navbar.Collapse>
           </Navbar>
+
           <Route path="/" exact render={()=> 
           <HomePage 
           signin={this.state.home.signin} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+          
+          <Route path="/login">
+          <Login />
+          </Route>
 
           <Route path="/dispatch" render={()=>           <DispatchPage 
             title={this.state.dispatch.title} 
