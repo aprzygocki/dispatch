@@ -5,11 +5,11 @@ import Container from 'react-bootstrap/Container';
 function SupervisorPage(props) {
 
   return(
-    <Jumbotron className="bg-transparent jumbotron-fluid p-0">
+    // <Jumbotron className="bg-transparent jumbotron-fluid p-0">
       <Container fluid={true}>
         <SupervisorPage/>
       </Container>
-    </Jumbotron>
+    {/* </Jumbotron> */}
   );
 
 }
