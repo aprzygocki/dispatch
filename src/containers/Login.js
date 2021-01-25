@@ -50,14 +50,14 @@ export default function Login() {
         <br/>
         <p>or use one of your social profiles to login</p>
         
-        <a class="btn btn-block btn-social btn-facebok">
+        <a class="btn btn-block btn-social btn-facebook">
           <span class="fa fa-facebook"></span> Sign in with Facebook
         </a>
         <a class="btn btn-block btn-social btn-google">
           <span class="fa fa-google"></span> Sign in with Google
         </a>
         <br/>
-        <p>Forgot Password?</p><p>Sign Up</p>
+        <p><a href="">Forgot password?</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Sign Up</a></p>
         
         
       </Form>
