@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Login.css";
+import Logo from '../components/logo325p.jpg';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -17,7 +20,13 @@ export default function Login() {
 
   return (
     <div className="Login">
+      <Row className="center">
+        <img src={Logo}/>
+      </Row>
+
       <Form onSubmit={handleSubmit}>
+      <h3>Sign in</h3>
+      <p>Hi there! Nice to see you again.</p>
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>
           <Form.Control
@@ -36,9 +45,23 @@ export default function Login() {
           />
         </Form.Group>
         <Button block size="lg" type="submit" disabled={!validateForm()}>
-          Login
+          Sign In
         </Button>
+        <br/>
+        <p>or use one of your social profiles to login</p>
+        
+        <a class="btn btn-block btn-social btn-facebok">
+          <span class="fa fa-facebook"></span> Sign in with Facebook
+        </a>
+        <a class="btn btn-block btn-social btn-google">
+          <span class="fa fa-google"></span> Sign in with Google
+        </a>
+        <br/>
+        <p>Forgot Password?</p><p>Sign Up</p>
+        
+        
       </Form>
+      
     </div>
   );
 }

@@ -1,10 +1,40 @@
 @media all and (min-width: 480px) {
   .Login {
-    padding: 60px 0;
+    padding: 20px 0;
   }
 
   .Login form {
     margin: 0 auto;
     max-width: 320px;
   }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40vh;  
+}
+.facebook-icon-1 {
+  width: 10px;
+  height: 20px;
+  background: #ffffff;
+  border-color: #000000;
+  border-style: solid;
+}
+.label-1-copy-6 {
+  width: 107px;
+  height: 35px;
+  color: #ffffff;
+  font-family: "Asap";
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+}
+.rectangle-8-copy-5 {
+  width: 132px;
+  height: 48px;
+  background: #3b5998;
+  border-color: #eeeeee;
+  border-style: solid;
+  border-radius: 6px 6px 6px 6px;
+}
 }
