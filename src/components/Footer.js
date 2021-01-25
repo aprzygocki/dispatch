@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import LogoFooter from '../components/logo192.png';
+import LogoFooter from '../components/footer_logo75h.jpg';
 
 function Footer() {
 
