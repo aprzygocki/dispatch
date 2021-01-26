@@ -1,9 +1,9 @@
 @media all and (min-width: 480px) {
-  .Login {
+  .Signup {
     padding: 20px 0;
   }
 
-  .Login form {
+  .Signup form {
     margin: 0 auto;
     max-width: 320px;
   }
@@ -11,14 +11,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:40vh;  
+    height:40vh;
   }
   .facebook-icon-1 {
-    width: 10px;
-    height: 20px;
-    background: #ffffff;
-    border-color: #000000;
-    border-style: solid;
+   width: 10px;
+   height: 20px;
+   background: #ffffff;
+   border-color: #000000;
+   border-style: solid;
   }
   .label-1-copy-6 {
     width: 107px;
@@ -36,5 +36,8 @@
     border-color: #eeeeee;
     border-style: solid;
     border-radius: 6px 6px 6px 6px;
+  }
+  a:link {
+    color: #ee6e57;
   }
 }

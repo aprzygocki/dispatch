@@ -12,6 +12,7 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import SupervisorPage from './pages/SupervisorPage';
 import Login from "./containers/Login";
+import Signup from "./containers/Signup";
 
 class App extends React.Component {
 
@@ -87,6 +88,10 @@ class App extends React.Component {
           
           <Route path="/login">
           <Login />
+          </Route>
+
+          <Route path="/signup">
+          <Signup />
           </Route>
 
           <Route path="/dispatch" render={()=>           <DispatchPage 
