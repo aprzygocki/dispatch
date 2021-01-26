@@ -66,7 +66,9 @@ class App extends React.Component {
         <Container className="p=5" fluid={true}>
 
           <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand>User Name</Navbar.Brand>
+            <Navbar.Brand>
+              {/* this will render in the upper left corner */}
+            </Navbar.Brand>
 
            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
            <Navbar.Collapse id="navbar-toggle">
