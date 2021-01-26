@@ -42,8 +42,8 @@ export default function Signup() {
           />
         </Form.Group>
         <p>
-          <span>I agree to the <a href=""className="link">Terms of Services</a> and </span>
-          <span><a href="">Privacy Policy.</a></span></p>
+          <span>I agree to the <a href="https://vesselmasters.com/terms-of-service/"className="link">Terms of Services</a> and </span>
+          <span><a href="https://vesselmasters.com/privacy-policy/">Privacy Policy.</a></span></p>
         <Button block size="lg" type="submit" disabled={!validateForm()}>
           Continue
         </Button>
