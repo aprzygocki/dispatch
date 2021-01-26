@@ -5,6 +5,7 @@ import "./Signup.css";
 import Logo from '../components/login_logo325.jpg';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Checkbox from '../components/Checkbox';
 
 export default function Signup() {
   const [email, setEmail] = useState("");
@@ -32,33 +33,33 @@ export default function Signup() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-        </Form.Group>
-        <Form.Group size="lg" controlId="password">
-          <Form.Label>Password</Form.Label>
-          <Form.Control
+          </Form.Group>
+           <Form.Group size="lg" controlId="password">
+            <Form.Label>Password</Form.Label>
+            <Form.Control
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-        </Form.Group>
-        <p>
-          <span>I agree to the <a href="https://vesselmasters.com/terms-of-service/"className="link">Terms of Services</a> and </span>
-          <span><a href="https://vesselmasters.com/privacy-policy/">Privacy Policy.</a></span></p>
-        <Button block size="lg" type="submit" disabled={!validateForm()}>
+          </Form.Group>
+
+          <Checkbox/>
+
+          <br/>
+          <Button block size="lg" type="submit" disabled={!validateForm()}>
           Continue
-        </Button>
-        {/* <br/>
-        <p>or use one of your social profiles to login</p>
+          </Button>
+            {/* <br/>
+          <p>or use one of your social profiles to login</p>
         
-        <a class="btn btn-block btn-social btn-facebook">
+          <a class="btn btn-block btn-social btn-facebook">
           <span class="fa fa-facebook"></span> Sign in with Facebook
-        </a>
-        <a class="btn btn-block btn-social btn-google">
+          </a>
+          <a class="btn btn-block btn-social btn-google">
           <span class="fa fa-google"></span> Sign in with Google
-        </a> */}
-        <br/>
-        <p>Have an Account?&nbsp;&nbsp;&nbsp;<a href="/login">Sign In</a></p>
-        
+          </a> */}
+          <br/>
+          <p>Have an Account?&nbsp;&nbsp;&nbsp;<a href="/login">Sign In</a></p>
         
       </Form>
       
