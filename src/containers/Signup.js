@@ -58,9 +58,9 @@ export default function Signup() {
           <a class="btn btn-block btn-social btn-google">
           <span class="fa fa-google"></span> Sign in with Google
           </a> */}
-          <br/>
+          <div className="center">
           <p>Have an Account?&nbsp;&nbsp;&nbsp;<a href="/login">Sign In</a></p>
-        
+          </div>
       </Form>
       
     </div>
