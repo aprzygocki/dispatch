@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { setJobUI, saveJob } from "./jobSlice";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import { Dropdown } from "react-bootstrap";
 import "react-day-picker/lib/style.css";
 import Calendar from "../components/Calendar";
 import Hero from "../components/Hero";
+import { use } from "../../routes/apiRoutes";
 
 // import Button from 'react-bootstrap/Button';
 // import { Dropdown } from 'semantic-ui-react';
@@ -14,9 +17,17 @@ import Hero from "../components/Hero";
 // import SplitButton from 'react-bootstrap/SplitButton';
 // import ToggleButton from 'react-bootstrap/ToggleButton';
 // import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
+const initialValues = {
+  quantity: "", 
+  position: "", 
+  qualifications: "", 
+  duration: "", 
+  location: "",
+};
 
-function SupervisorPage(props) {
-  const [value, setValue] = useState("");
+// function SupervisorPage(props) {
+//   const [value, setValue] = useState("");
+//   const dispatch = useDispatch()
   const handleSelect = (e) => {
     console.log(e);
     setValue(e);
