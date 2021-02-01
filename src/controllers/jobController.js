@@ -1,4 +1,4 @@
-const db = require('../model/jobs')
+const db = require('../model/Jobs.js')
 const mongoDb = require('mongodb')
 
 const createJob = async (req, res) => {

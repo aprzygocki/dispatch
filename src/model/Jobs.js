@@ -1,4 +1,4 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 const JobSchema = new Schema(
   {
     quantity: {
@@ -21,6 +21,7 @@ const JobSchema = new Schema(
       type: String, 
       required: true,
     },
+  },  
 );
 
 const Job = model("Job", JobSchema);
