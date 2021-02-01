@@ -1,12 +1,14 @@
 import React, { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import { setJobUI, saveJob } from "./jobSlice";
 import ButtonGroup from "react-bootstrap/ButtonGroup";
 import { Dropdown } from "react-bootstrap";
 import "react-day-picker/lib/style.css";
 import Calendar from "../components/Calendar";
 import Hero from "../components/Hero";
-import { use } from "../../routes/apiRoutes";
+import { use } from "../routes/apiRoutes/index";
+import {createSlice} from '@reduxjs/toolkit';
+import { useSelector } from 'react-redux'
 
 // import Button from 'react-bootstrap/Button';
 // import { Dropdown } from 'semantic-ui-react';
@@ -25,12 +27,17 @@ const initialValues = {
   location: "",
 };
 
-// function SupervisorPage(props) {
-//   const [value, setValue] = useState("");
-//   const dispatch = useDispatch()
+function SupervisorPage(props) {
+  const dispatch = useDispatch()
+  const [value, setValue] = useState(initialValues);
+  
   const handleSelect = (e) => {
     console.log(e);
-    setValue(e);
+    const { name, value } = e.target;
+    setValue({
+      ...values,
+      [name]: value,
+    });
   };
   return (
     <>

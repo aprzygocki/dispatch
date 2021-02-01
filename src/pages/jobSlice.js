@@ -1,5 +1,5 @@
 import {createSlice} from '@reduxjs/toolkit';
-import {getJobs, setJob} from "../../api/dispatchApi";
+import {getJobs, setJob} from "../api/dispatchApi";
 
 const initialState = {
     jobs: [],
