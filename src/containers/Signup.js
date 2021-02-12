@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "./Signup.css";
-import Logo from '../components/login_logo325.jpg';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Logo from '../components/login_logo325.jpg';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 import Checkbox from '../components/Checkbox';
 
 export default function Signup() {

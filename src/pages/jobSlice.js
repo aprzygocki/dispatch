@@ -83,7 +83,7 @@ export const saveJob = (
 ) => async (dispatch) => {
   try {
     dispatch(setJobStart());
-    dispatch(setJobSuccess(job));
+    dispatch(setJobSuccess(jobs));
   } catch (error) {
     dispatch(setJobFailure(error.toString()));
   }

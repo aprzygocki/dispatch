@@ -74,4 +74,59 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Dispatch
 
+## User Story
+Our organization needs to modify the way jobs are assigned to employees. We recognize that technological advancements can aid the current process for dispatching employees. Our aim is to begin with the same process currently in place with the added benefit of smart phone technology and web applications. 
+
+We dispatch each job from a pool of employees provided  by a local union.
+
+If we wish to dispatch a job lasting 40 hours or more, priority is given to permanent employees with company seniority. If none of our permanent employees are available, or decline the job for any reason, the job is given to the union to fill. 
+
+If we wish to dispatch a job lasting less than 40 hours, priority is given to the members of the union. 
+
+In either case we MUST dispatch according to seniority. 
+
+The union has 4 classes of seniority.
+They are A, B, C, D.
+Within each class, there are assigned numbers to each class and member.
+These numbers are 3 digit numbers usually from 100-999
+Each member has a card with their class and number printed upon it. The cards are used to bid on jobs using the highest class card with the lowest number to win the bid.
+
+Each member of the union has some level of seniority. 
+The company has permanent employees which were attained from the union who have company seniority.
+
+### Example 1:
+Mike Smith A 891
+John Dough C 345 (with company seniority)
+
+If both bid for the same job lasting less than 40 hours, priority is given to `A 891`. 
+
+If both bid for the same job lasting 40 hours or more, priority is given to `C 345`.
+
+## Exercise:
+Assuming these members have no company seniority, which one would win if they bid for an 8 hour job?
+
+Sierra Gerson	        A	954
+Cassondra Meyer	      A	951
+Delmar Colman	        A	950
+Nery Hacker	          A	940
+Jean Harada	          A	939
+Vennie Field	        B	725
+Nathanial Sheroan	    B	750
+Anabel Warford	      B	741
+Gena Callaham	        B	716
+Scottie Mera	        C	430
+Federico Longmire	    C	455
+Diedre Caverly	      C	489
+Lorrie Skillern	      C	411
+Nichelle Tassone	    C	400
+Eugenia Faulkenberry	D	366
+Florencio Munz	      D	322
+Eneida Heinecke	      D	356
+Moira Guidi	          D	398
+Keli Money	          D	317
+Ludivina Rennie	      D	302
+
+Answer:
+Jean Harada	          A	939
+Highest class "A", lowest number "939" within that class
 

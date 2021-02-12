@@ -11,7 +11,7 @@ function Footer() {
       <Container fluid={true}>
         <Row className="border-top justify-content-between p-3">
           <Col>
-          <img src={LogoFooter}/>
+          <img src={LogoFooter} alt="Vessel Master's Logo"/>
           </Col>
            <Col className="p-0 d-flex justify content-end" md={3}>
               Created by Vessel Masters Inc. Copyright &copy; Vesssel Masters. All rights reserved.

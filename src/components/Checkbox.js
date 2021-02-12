@@ -12,10 +12,10 @@ const Checkbox = () => {
     // Don't miss the exclamation mark
   }
 
-  // When the button is clicked
-  const btnHandler = () => {
-    alert('The buttion is clickable!');
-  };
+  // // When the button is clicked
+  // const btnHandler = () => {
+  //   alert('The buttion is clickable!');
+  // };
 
   return (
     <div className="Checkbox">

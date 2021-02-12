@@ -4,7 +4,7 @@ import Button from "react-bootstrap/Button";
 import "./Login.css";
 import Logo from '../components/login_logo325.jpg';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Col from 'react-bootstrap/Col';
 
 export default function Login() {
   const [email, setEmail] = useState("");
@@ -20,13 +20,13 @@ export default function Login() {
 
   return (
     <div className="Login">
-      <Row className="center">
-        <img src={Logo}/>
+      <Row className="logo">
+        <img src={Logo}alt="Vessel Master's Logo"/>
       </Row>
 
       <Form onSubmit={handleSubmit}>
       <h3>Sign in</h3>
-      <p>Hi there! Nice to see you again.</p>
+      <p>Welcome aboard! Nice to see you again.</p>
         <Form.Group size="lg" controlId="email">
           <Form.Label>Email</Form.Label>
           <Form.Control
